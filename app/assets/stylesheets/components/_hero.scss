@@ -1,7 +1,15 @@
 .hero-container {
-  background-image: image-url("cocktails-hero.jpg");
-  width: 100vw;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), image-url("cocktails-hero2.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
 }
+.hero-container h3 {
+  color: white;
+  font-family: 'Livvic', sans-serif;
+  padding-left: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+

@@ -2,19 +2,19 @@
 <html>
 
 <head>
-  <title>CocktailsCocktailsCocktails</title>
+  <title>Cocktail Dreams</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
 </head>
+
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="/cocktails">Cocktails Cocktails Cocktails</a>
-  <button class="btn btn-outline-info">
-    <%= link_to 'Add a cocktail', new_cocktail_path %>
-  </button>
+  <a class="navbar-brand" href="/cocktails">Cocktail Dreams</a>
+  <button type="button" class="btn btn-outline-info"><%= link_to 'Add a cocktail', new_cocktail_path %></button>
 </nav>
 
 <body>

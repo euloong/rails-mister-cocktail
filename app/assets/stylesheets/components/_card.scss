@@ -1,27 +1,33 @@
-.card {
-  background-size: cover;
-  background-position: center;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+.card-cocktail {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin-top: 16px;
 }
-
-.card h2 {
-  text-decoration: none;
+.card-cocktail:hover {
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.8);
 }
-
+.card-cocktail > img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+.card-cocktail a {
+}
+.card-cocktail-infos h2 {
+  padding: 16px;
+  font-family: 'Livvic', sans-serif;
+}
 .cards {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 32px;
+}
+.cards a {
+  color: black;
+  text-decoration: none;
 }
 
 // Smallest device

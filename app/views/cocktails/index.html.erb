@@ -1,13 +1,31 @@
 <div class="hero-container">
+  <div class="d-flex align-items-center">
+    <h3>Find inspiration for your next cocktail <br/>or add a recipe of your own!</h3>
+  </div>
 </div>
 
 <div class="container">
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
-    <h2 class="card" style="text-decoration: none">
-      <%= cl_image_tag cocktail.photo, height: 150, width: 200, crop: :fill %>
-      <%= link_to cocktail.name, cocktail_path(cocktail) %>
-    </h2>
+      <%= link_to cocktail_path(cocktail) do %>
+        <div class="card-cocktail">
+          <%= cl_image_tag cocktail.photo, height: 150, width: 200, crop: :fill %>
+            <div class="card-cocktail-infos">
+              <h2><%= cocktail.name %></h2>
+            </div>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>
+
+<!-- <div class="container">
+  <div class="cards">
+    <%# @cocktails.each do |cocktail| %>
+    <h2 class="card">
+      <%#= cl_image_tag cocktail.photo, height: 150, width: 200, crop: :fill %>
+      <%#= link_to cocktail.name, cocktail_path(cocktail) %>
+    </h2>
+    <%# end %>
+  </div>
+</div> -->
