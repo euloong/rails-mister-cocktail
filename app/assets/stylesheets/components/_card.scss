@@ -5,15 +5,14 @@
   border-radius: 5px;
 }
 .card-cocktail:hover {
-  box-shadow: 1px 1px 15px rgba(0,0,0,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 .card-cocktail > img {
   height: 150px;
   width: 100%;
   object-fit: cover;
 }
-.card-cocktail a {
-}
+
 .card-cocktail-infos h2 {
   padding: 16px;
   font-family: 'Livvic', sans-serif;
@@ -23,7 +22,7 @@
   padding-bottom: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 32px;
+  grid-gap: 40px;
 }
 .cards a {
   color: black;
