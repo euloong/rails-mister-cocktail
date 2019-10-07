@@ -22,6 +22,16 @@ class DosesController < ApplicationController
 
     redirect_to @dose.cocktail
   end
+  
+  def edit
+    @dose = Dose.find(params[:id])
+  end
+  
+  def update
+  @dose = Dose.find(params[:id])
+  @dose.update(description: params[:dose][:description], ingredient_id: params[:dose][:ingredient_id])
+  redirect_to @dose.cocktail
+  end
 
   private
 
