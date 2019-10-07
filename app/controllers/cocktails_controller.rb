@@ -10,6 +10,16 @@ class CocktailsController < ApplicationController
   def new
     @cocktail = Cocktail.new
   end
+  
+  def edit
+    @cocktail = Cocktail.find(params[:id])
+  end
+  
+  def update
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.update(name: params[:cocktail][:name], photo: params[:cocktail][:photo])
+    redirect_to cocktail_path(@cocktail)
+  end
 
   def create
     @cocktail = Cocktail.new(cocktail_params)
